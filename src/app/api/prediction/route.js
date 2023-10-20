@@ -1,5 +1,6 @@
+import {ticker} from '../getStockDetails'
 import { NextResponse } from "next/server";
-import { load } from 'cheerio'
+const {load} = require('cheerio')
 const util = require("util");
 const { getDetailsByStockName } = require('../getStockDetails')
 const exec = util.promisify(require("child_process").exec);

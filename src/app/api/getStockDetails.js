@@ -88,4 +88,5 @@ for(const item in data){
   chart.render();
 };
 
-module.exports = { getDetailsByStockName };
+
+module.exports = { getDetailsByStockName};
