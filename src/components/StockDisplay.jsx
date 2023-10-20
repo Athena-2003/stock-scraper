@@ -13,7 +13,7 @@ const StockDisplay = ({stock}) => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get("/api/prediction");
+        const response = await axios.post("/api/prediction", {ticker:stock.Ticker});
         setPrediction(response.data.data);
       } catch (error) {
         console.error("Error:", error);
